@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sillar y Café: café, postres y momentos especiales en el corazón de Arequipa.">
+    <title>Sillar y Café | Un rincón arequipeño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Sillar y Café, ir al inicio">
+            <span class="brand-mark" aria-hidden="true">S</span>
+            <span>Sillar <span class="brand-ampersand">&</span> Café</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-toggle-label">Menú</span>
+            <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li class="has-submenu">
+                    <a href="#servicios" aria-haspopup="true" aria-expanded="false">Servicios <span class="chevron" aria-hidden="true">⌄</span></a>
+                    <ul class="submenu">
+                        <li><a href="#cafeteria">Cafetería</a></li>
+                        <li><a href="#delivery">Delivery</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#videos">Experiencias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio" aria-label="Presentación de Sillar y Café">
+            <div class="slider" aria-roledescription="carrusel">
+                <article class="slide is-active" style="--slide-image: url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=2000&q=85')" aria-hidden="false">
+                    <div class="slide-shade"></div>
+                    <div class="slide-content">
+                        <p class="eyebrow">Un rincón con sabor arequipeño</p>
+                        <h1>Tu pausa favorita<br>en el corazón de Arequipa</h1>
+                        <p>Café de especialidad, recetas caseras y la calidez de nuestra ciudad.</p>
+                        <a class="button button-light" href="#servicios">Descubre lo que hacemos <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="slide" style="--slide-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=2000&q=85')" aria-hidden="true">
+                    <div class="slide-shade"></div>
+                    <div class="slide-content">
+                        <p class="eyebrow">Hecho para compartir</p>
+                        <h2>Buenos momentos,<br>servidos en tu mesa</h2>
+                        <p>Un espacio acogedor para encontrarse, conversar y disfrutar.</p>
+                        <a class="button button-light" href="#eventos">Conoce nuestro espacio <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="slide" style="--slide-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=85')" aria-hidden="true">
+                    <div class="slide-shade"></div>
+                    <div class="slide-content">
+                        <p class="eyebrow">Pequeños placeres, grandes sabores</p>
+                        <h2>Una taza que<br>te hace sentir en casa</h2>
+                        <p>Ingredientes seleccionados y mucho cariño en cada preparación.</p>
+                        <a class="button button-light" href="#contacto">Ven a visitarnos <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <div class="slider-controls" aria-label="Controles del carrusel">
+                    <button class="slider-arrow slider-prev" type="button" aria-label="Diapositiva anterior">←</button>
+                    <div class="slider-dots" aria-label="Elegir diapositiva">
+                        <button class="slider-dot is-active" type="button" aria-label="Mostrar diapositiva 1" aria-current="true"></button>
+                        <button class="slider-dot" type="button" aria-label="Mostrar diapositiva 2"></button>
+                        <button class="slider-dot" type="button" aria-label="Mostrar diapositiva 3"></button>
+                    </div>
+                    <button class="slider-arrow slider-next" type="button" aria-label="Diapositiva siguiente">→</button>
+                </div>
+                <span class="slide-count" aria-live="polite">01 <span>/</span> 03</span>
+            </div>
+        </section>
+
+        <section class="about section-wrap" id="nosotros">
+            <div class="about-photo">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85" alt="Interior acogedor de una cafetería con mesas de madera">
+                <div class="photo-note"><span>Desde Arequipa</span><strong>Con cariño<br>para ti</strong></div>
+            </div>
+            <div class="about-copy">
+                <p class="eyebrow eyebrow-dark">Nuestra esencia</p>
+                <h2>Un lugar para hacer una pausa y sentirte en casa.</h2>
+                <p class="body-copy">En Sillar y Café celebramos los encuentros sencillos: una buena taza, algo rico para compartir y el encanto de Arequipa alrededor. Somos un proyecto local que busca crear momentos cálidos con productos preparados con dedicación.</p>
+                <div class="values">
+                    <div><span class="value-icon" aria-hidden="true">✳</span><div><h3>Nuestra misión</h3><p>Ofrecer sabores honestos y una atención cercana en cada visita.</p></div></div>
+                    <div><span class="value-icon" aria-hidden="true">✧</span><div><h3>Nuestra visión</h3><p>Ser un punto de encuentro querido por nuestra comunidad arequipeña.</p></div></div>
+                </div>
+                <a class="text-link" href="#contacto">Ven a conocernos <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="services section-wrap" id="servicios">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow-dark">Un sabor para cada momento</p>
+                    <h2>Lo que tenemos<br>para ti</h2>
+                </div>
+                <p class="section-intro">Desde tu café de todos los días hasta una celebración especial, queremos acompañarte con algo rico y una sonrisa.</p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card" id="cafeteria">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Taza de café recién preparado junto a granos de café" loading="lazy">
+                        <span class="service-number">01</span>
+                    </div>
+                    <div class="service-copy">
+                        <p class="card-label">Para disfrutar aquí</p>
+                        <h3>Cafetería</h3>
+                        <p>Café preparado al momento, bebidas reconfortantes y postres caseros para darte ese gusto que mereces.</p>
+                        <a href="#contacto" class="card-link" aria-label="Consultar sobre la cafetería">Conoce más <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="service-card" id="delivery">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85" alt="Croissants recién horneados listos para compartir" loading="lazy">
+                        <span class="service-number">02</span>
+                    </div>
+                    <div class="service-copy">
+                        <p class="card-label">Un antojo en camino</p>
+                        <h3>Delivery</h3>
+                        <p>Tus favoritos llegan a casa o a la oficina. Escríbenos para consultar la carta y la cobertura de entrega.</p>
+                        <a href="#contacto" class="card-link" aria-label="Consultar sobre el delivery">Conoce más <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="service-card" id="eventos">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85" alt="Mesa decorada para una celebración especial" loading="lazy">
+                        <span class="service-number">03</span>
+                    </div>
+                    <div class="service-copy">
+                        <p class="card-label">Momentos especiales</p>
+                        <h3>Eventos</h3>
+                        <p>Un espacio íntimo para celebrar cumpleaños, reuniones y esos momentos que merecen compartirse.</p>
+                        <a href="#contacto" class="card-link" aria-label="Consultar sobre eventos">Conoce más <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="quote-band">
+            <div class="quote-inner">
+                <span class="quote-mark" aria-hidden="true">“</span>
+                <blockquote>Los mejores recuerdos siempre tienen algo rico en la mesa.</blockquote>
+                <p>Un poquito de Arequipa, un montón de cariño.</p>
+            </div>
+        </section>
+
+        <section class="videos section-wrap" id="videos">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow-dark">Mira y anímate a visitarnos</p>
+                    <h2>Un vistazo a<br>nuestra inspiración</h2>
+                </div>
+                <p class="section-intro">El café también es una historia: descubre más sobre su origen y déjate inspirar por los paisajes de nuestra región.</p>
+            </div>
+            <div class="video-grid">
+                <article class="video-card">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/MxUT1eT-0w8" title="The World's Best Barista Makes a Coffee, de Golden Brown Coffee" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h3>El arte de preparar café</h3>
+                    <p>Un barista prepara una taza de café en este video de Golden Brown Coffee.</p>
+                    <a class="card-link" href="https://www.youtube.com/watch?v=MxUT1eT-0w8" target="_blank" rel="noopener noreferrer">Abrir en YouTube <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="video-card">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/aJwdWeiSc8c" title="A Day With a Barista in One of NYC's Busiest Coffee Shops, de NYT Cooking" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h3>Un día en una cafetería</h3>
+                    <p>Acompaña a una barista durante su jornada en una cafetería de Nueva York.</p>
+                    <a class="card-link" href="https://www.youtube.com/watch?v=aJwdWeiSc8c" target="_blank" rel="noopener noreferrer">Abrir en YouTube <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+            <p class="video-note">Videos insertados desde canales de YouTube relacionados con el café.</p>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="contact-wrap">
+                <div class="contact-copy">
+                    <p class="eyebrow">Nos encantará atenderte</p>
+                    <h2>¿Nos tomamos<br>un cafecito?</h2>
+                    <p>Escríbenos para hacer una consulta, pedir información sobre delivery o planear tu próximo evento.</p>
+                    <div class="contact-details">
+                        <div><span class="contact-icon" aria-hidden="true">⌖</span><p><strong>Encuéntranos</strong><br>Centro histórico, Arequipa, Perú</p></div>
+                        <div><span class="contact-icon" aria-hidden="true">@</span><p><strong>Escríbenos</strong><br><a href="mailto:hola@sillarycafe.example">hola@sillarycafe.example</a></p></div>
+                    </div>
+                    <a class="button button-light whatsapp-button" href="https://wa.me/?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20Sillar%20y%20Caf%C3%A9" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp <span aria-hidden="true">↗</span></a>
+                </div>
+                <form class="contact-form" action="mailto:hola@sillarycafe.example" method="post" enctype="text/plain">
+                    <p class="form-eyebrow">Déjanos un mensaje</p>
+                    <label for="nombre">Tu nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" autocomplete="name" required>
+                    <label for="correo">Tu correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tunombre@correo.com" autocomplete="email" required>
+                    <label for="mensaje">¿En qué podemos ayudarte?</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos un poquito..." required></textarea>
+                    <button class="button button-dark" type="submit">Enviar mensaje <span aria-hidden="true">→</span></button>
+                    <p class="form-note">Formulario de demostración para la actividad.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#inicio">
+            <span class="brand-mark" aria-hidden="true">S</span>
+            <span>Sillar <span class="brand-ampersand">&</span> Café</span>
+        </a>
+        <p>Un rincón arequipeño para disfrutar sin apuro.</p>
+        <div class="footer-bottom">
+            <span>Estudiante: Marco Antonio Sencia</span>
+            <span>Curso: Fundamentos de Desarrollo Web</span>
+            <span>Arequipa · 2026</span>
+        </div>
+    </footer>
+
+</body>
+</html>
